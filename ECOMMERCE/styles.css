@@ -1,0 +1,403 @@
+/* Your existing CSS code goes here */
+
+.size {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 22px;
+    color: white;
+}
+.nav-link:hover {
+    background: linear-gradient(to left, #33cccc 0%, #ff6699 100%);
+    border-radius: 5px; /* Add rounded corners for a nice effect */
+  }
+button{
+    background: linear-gradient(to left, #33cccc 0%, #ff6699 100%);
+}
+
+button:hover{
+    background: linear-gradient(to right, #00ccff 0%, #99ff66 100%);
+}
+
+.col {
+    color: white;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+}
+
+
+.bg {
+    border-style: solid;
+    border-color: #33cccc;
+    width: 300px;
+    margin: 21px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.bg:hover{
+    border-color: rgb(13, 255, 0);
+}
+
+.main {
+    font-size: 17px;
+}
+
+.but {
+    background-color: goldenrod;
+    color: white;
+    border-color: red;
+    font-weight: bold;
+    border-width: 3px;
+}
+
+.cart-container {
+    margin-top: 30px;
+}
+
+.cart-container h2 {
+    text-align: center;
+}
+
+.cart-container #cart-count {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.imagesize {
+    height: 150px;
+    width: 150px
+}
+
+.size {
+    font-weight: bold;
+}
+
+.m {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.imgs {
+    height: 500px;
+    width: 500px;
+    gap: 2rem;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.heading {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sub-head {
+    color: black;
+    font-weight: bold;
+
+}
+
+.footer-section {
+    background-color: black;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding: 30px;
+    padding-left: 27px;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.clr {
+    font-size: 30px;
+    color: rgb(8, 246, 59);
+}
+.clr:hover{
+    color: rgb(15, 172, 225);
+}
+
+.imagesize1 {
+    height: 100px;
+    width: 100px
+}
+
+.m {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+/* Add this CSS to your existing styles.css */
+
+/* Initial opacity to hide images */
+.image {
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Apply the fade-in effect when image is in viewport */
+.image.show {
+    opacity: 1;
+}
+/* Enhance buttons */
+button.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style product cards */
+.bg {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.bg:hover {
+    transform: translateY(-5px);
+    border-color: #33cccc;
+}
+
+/* Add a subtle shadow on hover */
+.bg.shadow:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* Style footer section */
+.footer-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-section-mail-id, .footer-section-address {
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+/* Center align follow us icons */
+.follow-us-section {
+    background-color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.follow-us-icon-container {
+    background-color: #3498db;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.follow-us-icon-container:hover {
+    background-color: #2980b9;
+}
+/* Add this CSS to your existing styles.css */
+
+/* Initial position to hide images */
+.imgs img {
+    width: 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Apply slide-in and fade-in effect when image is in viewport */
+.imgs img.show {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Add this CSS to your existing styles.css */
+
+/* Initial position to hide images */
+/* Add this CSS to your existing styles.css */
+
+/* Initial position to hide images */
+.m-5 img {
+    width: 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Apply slide-in and fade-in effect when image is in viewport */
+.m-5 img.show {
+    width: auto;
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Add this CSS to your existing styles.css */
+
+/* Add this CSS to your existing styles.css */
+
+/* Add blue borders to images */
+.imgs img,
+.m-5 img {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Expand border and scale up image on hover */
+.imgs img:hover,
+.m-5 img:hover {
+    border-color: #2980b9;
+    transform: scale(1.05);
+}
+/* Add this CSS to your existing styles.css */
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #ffffff; /* Background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the navigation links */
+.nav-item a.nav-link {
+    color: #333333; /* Link color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item a.nav-link:hover {
+    color: #3498db; /* Hover color */
+}
+
+/* Style the navigation toggler icon */
+.navbar-toggler-icon {
+    background-color: #333333; /* Icon color */
+}
+
+/* Style the logo image */
+
+.navbar-brand img {
+    height: 100px; /* Increase the height */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+/* Add this CSS to your existing styles.css */
+
+/* Style the navigation links */
+.nav-item a.nav-link {
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for navigation links */
+.nav-item a.nav-link:hover {
+    color: #3498db;
+}
+
+/* Style the list items (li) */
+.navbar-nav li {
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for list items */
+.navbar-nav li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Color for text within list items */
+.navbar-nav li a {
+    color: #649be8;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for text within list items */
+.navbar-nav li:hover a {
+    color: #3498db;
+}
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #7575b6;
+
+    &:hover {
+        background-color: #5757a6;
+    }
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #91eae4;
+}
+
+
+
+
+
+
